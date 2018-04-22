@@ -16,7 +16,7 @@ interface boolean idempotenceOrder
 通过创建一个订单的ID来关联一个订单，避免重复创建新的订单。
 
 ### http中的幂等性
-在http中，`GET`, `PUT`,`HEAD`,`DELETE`都具有幂等性， 对于`OPTION`,`TRACE`是没有副作用的，那么这个方法也是具有幂等性。
+在http中，`GET`, `PUT`,`HEAD`,`DELETE`都具有幂等性， 对于`OPTION`,`TRACE`是没有副作用的，那么这个方法也是具有幂等性。
 - 对于利用`GET`获取资源, 比如：`GET demo/1`, 无论调用多少次，由于`GET`一般不会产生副作用，所以资源的状态时不变的(资源内容可能会改变)
 - 对于利用`DELETE`来删除资源，比如：`DELETE demo/123`，无论调用多少次，产生的副作用都是一样的, 即将资源删除了。
 - 对于`HEAD`获取资源元信息(不获取实体的主体), 所以调用多少次，和`GET`同样是没有副作用的。

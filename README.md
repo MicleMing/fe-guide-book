@@ -14,6 +14,7 @@
     - TCP
     - HTTP
       - [幂等性](./chapters/http/idempotence.md)
+      - [报文](./chapters/http/message.md)
     - Websocket
   - 安全
   - 存储
