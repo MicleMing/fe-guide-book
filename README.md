@@ -1,7 +1,7 @@
 # fe-guide-book
 
 ## 目录
-  - [引言](./chapters/part-1.md)
+  - [引言](./chapters/introduction.md)
   - 浏览器架构
     - 进程与线程
     - JS引擎
@@ -13,6 +13,7 @@
     - DNS
     - TCP
     - HTTP
+      - [幂等性](./chapters/http/idempotence.md)
     - Websocket
   - 安全
   - 存储
