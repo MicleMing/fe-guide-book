@@ -17,3 +17,15 @@ box-sizing: border-box
 ```
 
 ### 文档流 (Normal Flow)
+文档流就是浏览器默认的盒子(Box)排布方式，一般是从左到右，从上到下。文档流是相对于盒模型来讲的。盒子在文档流中可以属于两者不同的格式化上下文
+  - 块级盒子拥有块级格式化上下文(block formatting context)
+  - 行内盒子拥有行内格式化上下文(inline formatting context)
+
+一个盒子不能同时拥有以上两种格式化上下文
+<br/>
+#### 块级格式化上下文(block formatting context)
+
+
+### 参考资料
+- https://www.w3.org/TR/CSS21/visuren.html#visual-model-intro
+- https://www.w3.org/TR/CSS21/box.html
