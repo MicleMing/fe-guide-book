@@ -22,6 +22,7 @@
   - Javascript
   - CSS
     - [综述](./chapters/css/overview.md)
+    - [选择器](./chapters/css/selector.md)
     - [视觉格式化模型](./chapters/css/visual-formatting-model.md)
   - 设计模式
   - 代码规范
