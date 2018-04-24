@@ -7,7 +7,7 @@
 
 ### 攻击场景
 假设你是一个黑客，你发现网站A上有一个提交评论的输入框。如下图：
-![box](./images/xss_input.jpg)
+![xss](./images/xss_input.jpg)
 
 这时候你输入了这么一段代码：
 ```html
