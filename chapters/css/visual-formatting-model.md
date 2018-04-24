@@ -60,7 +60,7 @@ box-sizing: border-box
     <div class="element">hello BFC</div>
   </div>
 ```
-这里 `DIV.bfc-wrapper`和`DIV.element`处在不同的格式化上下文中，于是`margin`便不会发生重叠。
+这里 `DIV.bfc-wrapper`和`DIV.element`处在不同的格式化上下文中，于是`margin`便不会发生重叠。这里要区分创建`BFC`和在`BFC`内进行渲染的盒子。`DIV.bfc-wrapper`在他自己的格式化上下文中进行渲染，而`DIV.element`则在`DIV.bfc-wrapper`创建的`BFC`中进行渲染。
 `BFC`在实际开发中还是比较有用的，比如
   - 包裹浮动元素，防止父元素高度坍塌
   - 清除浮动
@@ -68,6 +68,9 @@ box-sizing: border-box
 总之，`BFC`是一个在布局中比较常涉及到的一个概念。
 
 ### 行内格式化上下文 (Inline formatting contexts)
+在行内格式化上下文`(IFC)`中, 盒子是一个接着一个水平排列的。在水平方向，盒子之间的距离通过`margin`,`padding`,`border`来计算。但是在垂直方向上，这些属性是不起效果的。在垂直方向上，盒子之间的对齐方式可以是顶部对齐，或者底部对齐，也可以是基于基线对齐。
+
+在`IFC`中， 父元素的行高必定是大于等于子元素中具有最高高度的一个盒子。可以理解为行内元素具有包裹性。
 
 ### 参考资料
 - https://www.w3.org/TR/CSS21/visuren.html#visual-model-intro
