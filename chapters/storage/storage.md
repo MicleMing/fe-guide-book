@@ -1,0 +1,3 @@
+## storage
+### localstorage
+### sessionstorage

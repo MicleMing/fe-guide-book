@@ -21,6 +21,9 @@
     - [跨站脚本攻击(xss)](./chapters/security/xss.md)
     - [跨站请求伪造(csrf)](./chapters/security/csrf.md)
   - 存储
+    - [cookie](./chapters/storage/cookie.md)
+    - [sessionstorage/localstorage](./chapters/storage/storage.md)
+    - [indexedDB](./chapters/storage/indexedDB.md)
   - Node
   - Javascript
   - [CSS](./chapters/css/overview.md)
