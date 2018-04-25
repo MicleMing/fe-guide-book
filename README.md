@@ -24,7 +24,7 @@
     - [跨站请求伪造(csrf)](./chapters/security/csrf.md)
   - 存储
     - [cookie](./chapters/storage/cookie.md)
-    - [sessionstorage/localstorage](./chapters/storage/storage.md)
+    - [webStorage](./chapters/storage/storage.md)
     - [indexedDB](./chapters/storage/indexedDB.md)
   - Node
   - Javascript
