@@ -66,4 +66,7 @@ class Cookie {
   }
 }
 ```
-这样就可以通过`get`和`set`接口对`cookie`进行简单的操作。
+这样就可以通过`getItem`和`setItem`接口对`cookie`进行简单的操作。
+
+### 参考资料
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
