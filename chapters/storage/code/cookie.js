@@ -2,12 +2,12 @@
  * @file cookie
  */
 class Cookie {
-  set(value, config = {}) {
+  setItem(value, config = {}) {
     const keys = Object.keys(config)
     const configStr = keys.map(k => `${k}=${config[key]}`).join(';')
     document.cookie = [escape(value), configStr].join(';')
   }
-  get(key) {
+  getItem(key) {
     const cookie = document.cookie
     const cookieMap = cookie.split(';').reduce((acc, kv) => {
       const pairs = kv.split('=')

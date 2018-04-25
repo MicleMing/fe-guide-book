@@ -47,15 +47,15 @@ Host: www.example.org
 Cookie: type=ninja; language=javascript; userId=123;
 ...
 ```
-在开发过程中，一般会对`document.cookie`进行接口封装，一次来达到对简化对`cookie`的操作。如下是一个简单的封装：
+在开发过程中，一般会对`document.cookie`进行接口封装，以此来达到对简化对`cookie`的操作。如下是一个简单的封装：
 ```js
 class Cookie {
-  set(value, config = {}) {
+  setItem(value, config = {}) {
     const keys = Object.keys(config)
     const configStr = keys.map(k => `${k}=${config[key]}`).join(';')
     document.cookie = [escape(value), configStr].join(';')
   }
-  get(key) {
+  getItem(key) {
     const cookie = document.cookie
     const cookieMap = cookie.split(';').reduce((acc, kv) => {
       const pairs = kv.split('=')
