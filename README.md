@@ -1,4 +1,6 @@
 # fe-guide-book
+## 介绍
+`fe-guide-book`的编写是通过`scrum`的方式进行管理。所以会分迭代进行，并不会将每一章节都编写完整才发布。而是通过迭代不断的进行完善。🤪
 
 ## 目录
   - [引言](./chapters/introduction.md)
