@@ -32,7 +32,7 @@
     - [选择器](./chapters/css/selector.md)
     - [视觉格式化模型](./chapters/css/visual-formatting-model.md)
   - 设计模式
-  - 代码规范
+  - [代码规范]('./chapters/code-guide/overview.md')
   - 前端项目设计
     - 技术选型
     - 组件设计
