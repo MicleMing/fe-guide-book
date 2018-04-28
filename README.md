@@ -12,7 +12,7 @@
     - 编译原理
   - 网络
     - 五层协议
-    - DNS
+    - [DNS](./chapters/DNS/overview.md)
     - TCP
     - [HTTP](./chapters/http/overview.md)
       - [幂等性](./chapters/http/idempotence.md)
