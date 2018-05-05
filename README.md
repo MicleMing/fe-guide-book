@@ -40,4 +40,5 @@
     - 数据流设计
     - 测试
   - 用户体验
-  - 敏捷开发
+  - [敏捷开发](./chapters/scrum/overview.md)
+    - [git工作流](./chapters/scrum/gitflow.md)
