@@ -82,11 +82,21 @@
 - master
 - stage
 - dev
-- feature/xxx
+- hotfix
+- env0
+  - feature/main
+  - feature/xxx
+  - feature/yyy
+- env1
+  - feature/main
+  - feature/xxx
 
 几个不同点的是
-  - 在往`dev`和`stage`合并代码的时候，并非是合并，而是`覆盖`代码。
-  - `feature`分支需要直接从`master`拉取。
+  - `feature/main`在往`dev`合并代码的时候，并非是合并，而是`覆盖`代码。
+  - `feature/main`分支需要直接从`master`拉取。然后在此基础上分出相对应的`feature[1~N]`,`feature[1~N]`在开发完后也需要合并回`feature/main`
 
 其余和单个迭代时的分支管理是一致的。
-通过这种方式，便能较简单的在`同一项目进行多个迭代`的情形进行管理。
+通过这种方式，便能较简单的在<b>同一项目进行多个迭代</b>的情形进行管理。
+
+### 总结
+做出工作流程的目的是为了在多人合作的情形下提高开发效率，减少错误的发生，虽然可能会牺牲灵活性，但是从长远看，是有很大价值的。
