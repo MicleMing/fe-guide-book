@@ -1,7 +1,8 @@
 # Design System
 ## 简介
 设计系统的产生是为了某领域内产品在不同平台和设备上都保持设计和交互风格的统一。既然是一个系统 ，那必须具有完整性，它提供了设计，内容等方面的指导。整个设计系统主要包含`Design Principle`, `Design Language`, `Code Library` 和一些相关的`Tools`组成。
-<img src='./design_system.jpg' width=500>
+
+<img src='./design_system.jpg' width=600>
 
 ## 主流风格
 目前业界广泛使用的`visual language`包括`Material Design`, `Metro Design` 等等。可以想象有一个数轴，数轴一端是扁平，另一端是拟物。目前大部分的设计风格都分布在这数轴之间。
@@ -24,8 +25,18 @@
 
 在产品及UX设计过程中，都需要去遵循这些原则。一个行为交互是否能应用在产品上，首先要考虑是否符合这些原则。譬如一款通讯软件，右侧列表里是否需要对**单聊**与**群聊**分为两个不同的类别，对于服务于企业的通讯软件，或许需要对两个类别进行分类会更高效。这里的考虑便是是否遵守了`High Efficiency`。
 
-## Design Language
+## Design Pattern
+`Design Pattern`是对某一类问题解决方案的抽象。利用GUI程序开发的角度去看的话，它应该是对应于业务组件。既然是业务组件，那么就是针对了某一类具体业务的解决方案。一个具体的交互场景是用户利用表单来提交数据。用户的操作无非是：
+- 输入数据
+- 提交数据
+
+但是用户在进行这两个步骤时，会出现数据校验，包含校验规则，校验失败和成功的提示, 提交数据前的确认对话框，提交数据后的反馈（成功或者失败提示）。这些共同构成了表单数据提交场景下的`Pattern`。简而言之，`Design Pattern`就是利用基础组件解决某一类问题的方案。
+
 ## Code Library
+`Code Libray`的基本组成便是`Component`. 在开发基于某个`Design Language`的代码库时，需要针对该`Design Language`建立基本的`Foundation`, `Design token`， 最后才在此基础上开发相应的`Component`
+
+### Foundation
+
 ### Design token
 `Design token`是设计尺度的固化，它描述了在这个设计系统中的颜色，字体，边框等一系列设计规格的所有可能取值。`Design token`与计算机语言里的枚举的概念有些类似，在用代码实现的一套组件的过程中，可以将`Design token` 分为名称和值两部分。名称一旦定下来，便不可改变，值则可以根据需要进行配置。譬如可以用如下代码描述一个字体的`Design token`
 ```js
@@ -65,6 +76,5 @@ const palette: Palette = {
 ```
 这样便定义了一个`hover`的规则，当鼠标悬浮到一个`button`上时，`button`的色值的透明度便会变成`0.8`;
 
-### CSS in JS
-
-### 
+### Components
+输入框，按钮，下拉菜单，图标。是组成一个界面的最基础元素。
