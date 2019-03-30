@@ -1,16 +1,17 @@
 # Design System
 ## 简介
-设计系统的产生是为了某领域内产品在不同平台和设备上都保持设计和交互风格的统一。既然是一个系统 ，那必须具有完整性，它提供了设计，内容等方面的指导。整个设计系统主要包含`Design Principle`, `Design Language`, `Code Library` 和一些相关的`Tools`组成。
+设计系统的产生是为了某领域内产品在不同平台和设备上都保持设计和交互风格的统一。既然是一个系统 ，那必须具有相应的完整性。它为产品设计，产品内容等方面提供相应的指导。总体来看，整个设计系统由`Design Principle`, `Design Language`, `Code Library` 和一些相关的`Tools`组成。从以下的图可以更直观的看到它的组成部分。
 
 <img src='./design_system.jpg' width=600>
 
 ## 主流风格
-目前业界广泛使用的`visual language`包括`Material Design`, `Metro Design` 等等。可以想象有一个数轴，数轴一端是扁平，另一端是拟物。目前大部分的设计风格都分布在这数轴之间。
+目前业界广泛使用的`visual language`包括`Material Design`, `Metro Design` 等等。可以想象有一个数轴，数轴一端是扁平风格，另一端是拟物风格。目前大部分的设计风格都分布在这条数轴之间。
+
 ### Material Design
 `Google`的`Material Design`是一个使用广泛的视觉语言(visual language). 统一了`google`系产品的视觉风格，并且能对其进行一定程度的客制化。
 > Material Design is inspired by the physical world and its textures, including how they reflect light and cast shadows. Material surfaces reimagine the mediums of paper and ink.
 
-与`Apple`的拟物化不同，`Material Design` 把风格从拟物往扁平化的方向拉了一拉，但却不是完全的扁平。它保持了物理世界的一些特质和纹理，并从`X轴`、`Y轴`、`Z轴` 三个维度描述一个物体. 在`Z轴`上的投影模拟了光的照射和基于此形成的阴影, 从而使设计元素有了立体的感觉。譬如`Button`的设计便是在底部利用`shadow`使按钮有略微上浮的感觉从而形成立体感。`Card`设计也是类似，利用`border`和`shadow`使整个`Card`从屏幕中上浮出来一般。
+与`Apple`先前的拟物化设计不同，`Material Design` 把设计风格从拟物化的一端往扁平化的方向拉了拉，但却不是完全的扁平。它保持了物理世界的一些特质和纹理，并从`X轴`、`Y轴`、`Z轴` 三个维度描述一个物体. 在`Z轴`上的投影模拟了光的照射和基于此形成的阴影, 从而使设计元素有了立体的感觉。譬如`Button`的设计便是在底部利用`shadow`使按钮有略微上浮的感觉从而形成立体感。`Card`设计也是类似，利用`border`和`shadow`使整个`Card`从屏幕中上浮出来一般。
 
 > Material is the metaphor
 
