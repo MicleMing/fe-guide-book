@@ -20,13 +20,13 @@
 ## Design language
 `Design language`较为重要的组成部分便是`Design Principle`, `Design Pattern`和`Design Components`这三部分。 `Design Principle`给出了高级别的抽象，是整个`Design language`的精神指导，就像某种文化一般，贯穿在设计与开发的所有环节。`Design Pattern`则是组合`Design Components`来解决现实中一类问题的规则。交互设计师和产品经理都可以利用这些规则来进行相应的交互和产品上的设计。
 ### Design Principle
-`Design Principle`描述了某个领域内业务形态或者操作形态的一系列规则。它体现的是某种精神，你的产品设计，UX/UI设计等都需要围绕着这些`spirit`。不同的公司甚至不同的团队都会有不同的`Principle`，但是也可能具有相同的`Principle`。`google`提出的`Meteral Design`, 便许多公司都遵从着这套方案，但是也会根据自己的业务做一定的修改，从而形成自己独有的`spirit`。 例如某通讯公司的`Design Principle`是：
+`Design Principle`描述了某个领域内业务形态或者操作形态的一系列规则。它体现的是某种精神，你的产品设计，UX/UI设计等都需要围绕着这些**精神**。不同的公司甚至不同的团队都会有不同的`Principle`，但是也可能具有相同的`Principle`。`google`提出的`Meteral Design`, 便许多公司都遵从着这套方案，但是也会根据自己的业务做一定的修改，从而形成自己独有的**精神**。 例如某通讯公司的`Design Principle`是：
 - High Efficiency（高效）
 - Communicating Authentic（沟通真实）
 - Build Trust（可信）
 - Stay Stable（稳定）
 
-在产品及UX设计过程中，都需要去遵循这些原则。一个行为交互是否能应用在产品上，首先要考虑是否符合这些原则。譬如一款通讯软件，右侧列表里是否需要对**单聊**与**群聊**分为两个不同的类别，对于服务于企业的通讯软件，或许需要对两个类别进行分类会更高效。这里的考虑便是是否遵守了`High Efficiency`。
+在产品及UX设计过程中，都需要去遵循这些原则。一个行为交互是否能应用在产品上，首先要考虑是否符合这些原则。譬如一款通讯软件，右侧列表里是否需要对**单聊**与**群聊**分为两个不同的类别，对于服务于企业的通讯软件，在企业内部合作过程中，经常会对某个项目或者问题建立一个讨论组或者项目组，所以或许对两个类别进行分类会更高效。这里的考虑便是是否遵守了`High Efficiency`。
 
 ### Design Pattern
 `Design Pattern`是对某一类问题解决方案的抽象。用GUI程序开发的角度去看的话，它应该是对应于业务组件。既然是业务组件，那么就是针对了某一类具体业务的解决方案。一个具体的交互场景是用户利用表单来提交数据。用户的操作无非是：
@@ -36,7 +36,7 @@
 但是用户在进行这两个步骤时，会出现数据校验，包含校验规则，校验失败和成功的提示, 提交数据前的确认对话框，提交数据后的反馈（成功或者失败提示）。这些共同构成了表单数据提交场景下的`Pattern`。简而言之，`Design Pattern`就是利用基础组件解决某一类问题的方案。
 
 ### Design Components
-`Design Components`是一系列的基础原件。就从`web`领域来说，它可能是浏览器上的输入框，按钮，复选框，弹出框等一系列的不带有业务的基础组件。而对于一个组件来说，需要定义它在不同交互操作时的不同表现的规范。拿最常见的组件`Button`(按钮)来说，它在点击(active)， 鼠标移到它的上方(hover)， 禁用(disabled)时的具体表现，包括颜色变化，动画效果等都需要在`Design Components`里进行详细的定义，这样才能说一个`Design Component`是完整的和可用的。
+`Design Components`是一系列的基础原件。就`web`领域来说，它可能是浏览器上的输入框，按钮，复选框，弹出框等一系列的不带有具体业务的基础组件。而对于一个组件来说，需要定义它在不同交互操作时的不同表现的规范。拿最常见的组件`Button`(按钮)来说，它在点击(active)， 鼠标移到它的上方(hover)， 禁用(disabled)时的具体表现，包括颜色变化，动画效果等都需要在`Design Components`里进行详细的定义，这样才能说一个`Design Component`是完整的和可用的。
 
 ## Code Library
 `Code Libray`的基本组成便是`Components`。 理想状态下，代码中库`Components`是实现了`Design Language`中的大部分的`Design Components`和`Design Pattern`，当然在现实情况下会视情况而定。在开发基于某个`Design Language`的代码库时，需要针对该`Design Language`建立基本的`Foundation`, `Design token`， 最后才在此基础上开发相应的`Components`
@@ -65,10 +65,11 @@ const fontSize: FontSize = {
 在上面的定义中，我们规定了在一个设计系统中字体大小的取值只有四种: `small`, `medium`, `large`, `xlarge`, 在用代码来实现的组件库中，字体的大小只能取这四个类型，每个类型对应于一个特定的值。值的可配置化是设计系统客制化的重要组成部分。得益于这些`token`的建立，各个角色对遵循于此设计系统的产品在设计上能达到一定程度的共识。
 
 ### Theme
-`Theme`定义了一个设计系统的主题调，它包含所有的`Design token`以及一些相应的计算规则。譬如当鼠标悬浮至一个`button`上时，背景色会根据`button`原有的色值按照一定的规则进行计算。
+`Theme`定义了一个设计系统的主题调，它包含所有的`Design token`以及一些相应的计算规则。譬如`Button`的圆角，颜色，大小会利用`Design token`进行组合，并且当鼠标悬浮至一个`button`上时，背景色会根据`button`原有的色值按照一定的规则进行计算。
 ```js
 interface Palette {
   ...
+  primary: #ffffff;
   action: {
     hover: Function;
   }
@@ -81,10 +82,10 @@ const palette: Palette = {
   }
 }
 ```
-这样便定义了一个`hover`的规则，当鼠标悬浮到一个`button`上时，`button`的色值的透明度便会变成`0.8`;
+这里定义了`primary`的颜色，而且定义了一个`hover`的规则，当鼠标悬浮到一个`button`上时，`button`的色值的透明度便会变成`0.8`;
 
 ### Components
-`Components`主要是组成一个界面的最基础元素以及相应的`Design Pattern`。在代码层面，需要关注的是高度的还原`Design Language`中定义的组件，以及需要符合软件开发的规范。譬如灵活性，鲁棒性等。就最常用的`Button`来说，如下是一种定义组件的方法:
+`Components`主要是组成一个界面的最基础元素以及相应的`Design Pattern`。在代码层面，需要高度的还原`Design Language`中定义的组件，以及需要符合软件开发的规范。譬如灵活性，鲁棒性等。就最常用的`Button`来说，如下是一种定义组件的方法:
 ```js
 interface BtnProps {
   variant: 'round' | 'plain';
@@ -102,4 +103,4 @@ export default Button
 ```
 这里主要定义了`Button`组件的`variant`,`size`,`color`,`loading`四种属性，在使用过程中，通过控制这四种属性来便可以控制组件的形态。
 
-这便是一个`Design System`的主要组成部分。当然在实际开发过程中，可能会遇到很多跨角色沟通，跨team合作等沟通合作商的问题，也会遇到很多软件质量和设计上的问题，这些都是在构建一个`Design System`时需要解决的问题。
+这便是一个`Design System`的主要组成部分。当然在实际开发过程中，可能会遇到很多跨角色沟通，跨team合作等沟通合作的问题，也会遇到很多软件质量和设计上的问题，这些都是在构建一个`Design System`时需要解决和考虑的。
