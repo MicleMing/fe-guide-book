@@ -2,7 +2,7 @@
 ## 简介
 设计系统的产生是为了某领域内产品在不同平台和设备上都保持设计和交互风格的统一。既然是一个系统 ，那必须具有相应的完整性。它为产品设计，产品内容等方面提供相应的指导。总体来看，整个设计系统由`Design Principle`, `Design Language`, `Code Library` 和一些相关的`Tools`组成。从以下的图可以更直观的看到它的组成部分。
 
-<img src='./design_system.jpg' width=600>
+<img src='./images/design_system.jpg' width=600>
 
 ## 主流风格
 目前业界广泛使用的`visual language`包括`Material Design`, `Metro Design` 等等。可以想象有一个数轴，数轴一端是扁平风格，另一端是拟物风格。目前大部分的设计风格都分布在这条数轴之间。
