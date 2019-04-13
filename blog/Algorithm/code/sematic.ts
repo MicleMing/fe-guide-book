@@ -1,5 +1,5 @@
 class Value {
-  reducible: boolean = false;
+  readonly reducible: boolean = false;
   value: number;
   constructor(value: number) {
     this.value = value;
@@ -7,7 +7,7 @@ class Value {
 }
 
 class Add {
-  reducible: boolean = true;
+  readonly reducible: boolean = true;
   left: any;
   right: any;
   constructor(left: any, right: any) {
@@ -28,7 +28,7 @@ class Add {
 }
 
 class Multiply {
-  reducible: boolean = true;
+  readonly reducible: boolean = true;
   left: any;
   right: any;
   constructor(left: any, right: any) {
@@ -65,11 +65,11 @@ class Machine {
 // 1 + 2 * 3
 
 new Machine(
-  new Add(
-    new Value(1),
-    new Multiply(
-      new Value(2),
-      new Value(3)
+  new Multiply(
+    new Value(2),
+    new Add(
+      new Value(3),
+      new Value(4)
     )
   )
 ).run();
