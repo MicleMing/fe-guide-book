@@ -1,4 +1,4 @@
-# Design System
+# Design System - 设计与代码的碰撞
 ## 简介
 设计系统的产生是为了某领域内产品在不同平台和设备上都保持设计和交互风格的统一。既然是一个系统 ，那必须具有相应的完整性。它为产品设计，产品内容等方面提供相应的指导。总体来看，整个设计系统由`Design Principle`, `Design Language`, `Code Library` 和一些相关的`Tools`组成。从以下的图可以更直观的看到它的组成部分。
 
@@ -20,7 +20,7 @@
 ## Design language
 `Design language`较为重要的组成部分便是`Design Principle`, `Design Pattern`和`Design Components`这三部分。 `Design Principle`给出了高级别的抽象，是整个`Design language`的精神指导，就像某种文化一般，贯穿在设计与开发的所有环节。`Design Pattern`则是组合`Design Components`来解决现实中一类问题的规则。交互设计师和产品经理都可以利用这些规则来进行相应的交互和产品上的设计。
 ### Design Principle
-`Design Principle`描述了某个领域内业务形态或者操作形态的一系列规则。它体现的是某种精神，你的产品设计，UX/UI设计等都需要围绕着这些**精神**。不同的公司甚至不同的团队都会有不同的`Principle`，但是也可能具有相同的`Principle`。`google`提出的`Meteral Design`, 便许多公司都遵从着这套方案，但是也会根据自己的业务做一定的修改，从而形成自己独有的**精神**。 例如某通讯公司的`Design Principle`是：
+`Design Principle`描述了某个领域内业务形态或者操作形态的一系列规则。它体现的是某种精神，你的产品设计，UX/UI设计等都需要围绕着这些**精神**。不同的公司甚至不同的团队都会有不同的`Principle`，但是也可能具有相同的`Principle`。`google`提出的`Meteral Design`, 便许多公司都遵从着这套方案，但是也会根据自己的业务做一定的修改，从而形成自己独有的**精神**。 例如Ringcentral的`Design Principle`是：
 - High Efficiency（高效）
 - Communicating Authentic（沟通真实）
 - Build Trust（可信）
